@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPluggableProtocol", "AsyncPluggableProtocol.csproj", "{1E020FA4-493B-41FB-AB1B-5175B711CB79}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPluggableProtocol", "AsyncPluggableProtocol\AsyncPluggableProtocol.csproj", "{1E020FA4-493B-41FB-AB1B-5175B711CB79}"
 EndProject
 Global
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 7c73a031-17c0-4b1b-8175-5ae25e6dd2f6
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
