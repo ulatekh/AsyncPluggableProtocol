@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AsyncPluggableProtocol")]
-[assembly: AssemblyDescription("Handle custom protocol schemes when you are using the WebBrowser control.")]
+[assembly: AssemblyTitle("AsyncPluggableProtocol - Win Form Sample")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AsyncPluggableProtocol")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b459eb1d-5333-40a5-92d9-97e96059864c")]
+[assembly: Guid("f35b047d-da8b-48c8-a55e-7667ae7611b8")]
 
 // Version information for an assembly consists of the following four values:
 //
