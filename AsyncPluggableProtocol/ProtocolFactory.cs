@@ -18,7 +18,7 @@ namespace AsyncPluggableProtocol
 
         private Func<IProtocol> _factory;
 
-        private ProtocolFactory(Func<IProtocol> factory)
+        internal ProtocolFactory(Func<IProtocol> factory)
         {
             this._factory = factory;
         }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPluggableProtocol", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormSample", "Samples\WinFormSample\WinFormSample.csproj", "{CB179B4B-3EFB-40EB-AEC4-2730A1907FC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPluggableProtocol.Tests", "AsyncPluggableProtocol.Tests\AsyncPluggableProtocol.Tests.csproj", "{F8AF2F6A-72A8-493D-BB92-428233C10F36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CB179B4B-3EFB-40EB-AEC4-2730A1907FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB179B4B-3EFB-40EB-AEC4-2730A1907FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB179B4B-3EFB-40EB-AEC4-2730A1907FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AF2F6A-72A8-493D-BB92-428233C10F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AF2F6A-72A8-493D-BB92-428233C10F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AF2F6A-72A8-493D-BB92-428233C10F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AF2F6A-72A8-493D-BB92-428233C10F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
