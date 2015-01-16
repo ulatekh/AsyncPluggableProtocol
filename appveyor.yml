@@ -20,6 +20,9 @@ build:
   project: AsyncPluggableProtocol.sln
   verbosity: detailed
 
+before_build:
+  - nuget restore
+
 assembly_info:
   patch: true
   file: AssemblyInfo.*
