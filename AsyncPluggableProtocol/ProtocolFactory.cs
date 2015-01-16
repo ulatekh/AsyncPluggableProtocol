@@ -5,17 +5,6 @@ namespace AsyncPluggableProtocol
 {
     public class ProtocolFactory : IClassFactory
     {
-        private static IInternetSession GetSession()
-        {
-            IInternetSession session;
-            int res = NativeMethods.CoInternetGetSession(0, out session, 0);
-
-            if (res != NativeConstants.S_OK || session == null)
-                throw new InvalidOperationException("CoInternetGetSession failed.");
-
-            return session;
-        }
-
         private Func<IProtocol> _factory;
 
         internal ProtocolFactory(Func<IProtocol> factory)
@@ -27,7 +16,7 @@ namespace AsyncPluggableProtocol
         {
             string emptyStr = null;
 
-            IInternetSession session = GetSession();
+            IInternetSession session = GetSession(new NativeMethods());
             try
             {
                 Guid handlerGuid = typeof(Protocol).GUID;
@@ -44,6 +33,17 @@ namespace AsyncPluggableProtocol
                 Marshal.ReleaseComObject(session);
                 session = null;
             }
+        }
+
+        internal static IInternetSession GetSession(INativeMethods nativeMethods)
+        {
+            IInternetSession session;
+            int res = nativeMethods.CoInternetGetSession(0, out session, 0);
+
+            if (res != NativeConstants.S_OK || session == null)
+                throw new InvalidOperationException("CoInternetGetSession failed.");
+
+            return session;
         }
 
         public void LockServer(bool Lock)
