@@ -13,8 +13,8 @@ namespace AsyncPluggableProtocol
     public interface IProtocol
     {
         string Name { get; }
-        Task<Stream> GetStreamAsync(string url);
-    }
+		Stream GetStream(string url);
+	}
 
     public class ProtocolFactory : IClassFactory
     {
@@ -99,18 +99,18 @@ namespace AsyncPluggableProtocol
         private byte[] data;
         private int readPos;
 
-        public async void Start(string szUrl, IInternetProtocolSink pOIProtSink, IInternetBindInfo pOIBindInfo, PI_FLAGS grfPI, int dwReserved)
+        public void Start(string szUrl, IInternetProtocolSink pOIProtSink, IInternetBindInfo pOIBindInfo, PI_FLAGS grfPI, int dwReserved)
         {
             var bytes = new byte[4096];
 
             try
             {
                 using (var ms = new MemoryStream())
-                using (var stream = await _protocol.GetStreamAsync(szUrl))
+                using (var stream = _protocol.GetStream(szUrl))
                 {
                     while (true)
                     {
-                        var n = await stream.ReadAsync(bytes, 0, bytes.Length);
+                        var n = stream.Read(bytes, 0, bytes.Length);
 
                         if (n == 0)
                         {

@@ -21,7 +21,7 @@ namespace AsyncPluggableProtocol
         void MainForm_Load(object sender, EventArgs e)
         {
             ProtocolFactory.Register("rsrc", () => new ResourceProtocol());
-            var html = @"<html><body style=""background-image: url(rsrc:helloworld.png)""></body></html>";
+            var html = @"<html><body style=""background-image: url(rsrc:helloworld)""></body></html>";
             Browser.DocumentText = html;
         }
     }
