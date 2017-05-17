@@ -484,15 +484,6 @@ namespace AsyncPluggableProtocol
         QUERY_IS_SAFE
     }
 
-    public static class NativeMethods
-    {
-        [DllImport("urlmon.dll")]
-        internal static extern int CoInternetGetSession(
-            int dwSessionMode,
-            out IInternetSession ppIInternetSession,
-            int dwReserved);
-    }
-
     public static class NativeConstants
     {
         public static readonly Guid IID_IDispatch = new Guid("{00020400-0000-0000-C000-000000000046}");
