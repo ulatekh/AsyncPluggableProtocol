@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AsyncPluggableProtocol.Properties {
+namespace WinFormSample.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace AsyncPluggableProtocol.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AsyncPluggableProtocol.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WinFormSample.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -59,17 +59,15 @@ namespace AsyncPluggableProtocol.Properties {
                 resourceCulture = value;
             }
         }
-
-		/// <summary>
-		///   Looks up a localized resource of type System.Drawing.Bitmap.
-		/// </summary>
-		internal static System.Drawing.Bitmap helloworld
-		{
-			get
-			{
-				object obj = ResourceManager.GetObject("helloworld", resourceCulture);
-				return ((System.Drawing.Bitmap)(obj));
-			}
-		}
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap helloworld {
+            get {
+                object obj = ResourceManager.GetObject("helloworld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

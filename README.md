@@ -1,3 +1,5 @@
+# AsyncPluggableProtocol
+
 Handle custom protocol schemes when you are using the `WebBrowser` control in a Windows Forms (or WPF) desktop application.
 
 ```C#
@@ -15,3 +17,8 @@ public interface IProtocol
     Task<Stream> GetStreamAsync(string url);
 }
 ```
+
+
+### License
+
+**AsyncPluggableProtocol** is licensed under [MIT License](LICENSE.md).

@@ -18,8 +18,6 @@ namespace AsyncPluggableProtocol
             get { return "rsrc"; }
         }
 
-        private static string DefaultNamespace = typeof(Program).Namespace;
-
 		public Stream GetStream(string a_strURL)
 		{
 			// Remove the protocol name from the URL.
